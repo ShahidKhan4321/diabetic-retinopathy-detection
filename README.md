@@ -45,7 +45,6 @@ diabetic-retinopathy-detection/
 ## 🚀 Installation & Setup (Local)
 
 ### 1. Clone Repository
-```bash
 git clone https://github.com/ShahidKhan4321/diabetic-retinopathy-detection.git
 cd diabetic-retinopathy-detection
 
@@ -66,7 +65,8 @@ python app.py
 Then open the Index.html,if you’re using the API.
 
 
-🌐 [Live Demo:](https://diabetic-retinopathy-detection-cnn.streamlit.app/)
+🌐 [Live Demo](https://diabetic-retinopathy-detection-cnn.streamlit.app/)
+
 🚀 Live Web App on Streamlit Cloud
 
 
