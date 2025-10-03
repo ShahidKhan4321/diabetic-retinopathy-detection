@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetic Retinopathy Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="title-heading">Diabetic Retinopathy Prediction</h2>
+
+        <form id="upload-form">
+            <label for="file">Choose an image</label>
+            <input type="file" id="file" name="file" accept="image/*" required onchange="previewImage()">
+            <div id="image-preview-container" style="display:none;">
+                <h3>Image Preview:</h3>
+                <img id="image-preview" alt="Image Preview" />
+            </div>
+            <button type="button" onclick="predict()">Predict</button>
+        </form>
+        <p id="prediction-result">Prediction result will be shown here</p>
+        <div id="loading-spinner" style="display:none;">
+            <span>Loading...</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

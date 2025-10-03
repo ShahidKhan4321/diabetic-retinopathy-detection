@@ -1,0 +1,10 @@
+matplotlib
+pandas
+streamlit
+flask
+flask-cors
+torch
+torchvision
+pillow
+numpy
+scikit-learn

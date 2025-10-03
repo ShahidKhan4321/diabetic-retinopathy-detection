@@ -1,0 +1,173 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/human-eye-with-using-the-futuristic-technology-royalty-free-image-1590506296.jpg%3fcrop%3d1xw:0.74297xh%3bcenter%2ctop%26resize%3d1200:*');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+/* Styling for the heading */
+#title-heading {
+    font-family: 'Roboto', sans-serif; /* Change font family */
+    font-size: 36px; /* Larger font size for emphasis */
+    font-weight: bold;
+    color: #4CAF50; /* Green color for the text */
+    text-align: center;
+    text-transform: uppercase; /* Makes the text all uppercase */
+    letter-spacing: 2px; /* Adds space between letters for a modern look */
+    position: relative;
+    animation: textAnimation 3s ease-out forwards; /* Text animation */
+    background: linear-gradient(90deg, #a62727, #205592); /* Gradient color */
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 30px; /* Spacing below the heading */
+}
+
+/* Typing effect animation */
+@keyframes textAnimation {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* Hover effect for the title */
+#title-heading:hover {
+    color: #fff; /* White color on hover */
+    transform: scale(1.1); /* Slightly scales up the heading */
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
+
+#title-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ae452e;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    animation: textAnimation 3s ease-out forwards;
+    background: linear-gradient(90deg, #b82626, #971c1c);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(192, 40, 40, 0.8), 0 0 20px rgba(197, 32, 32, 0.6);
+}
+
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02); /* Subtle hover effect */
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #333;
+}
+
+input[type="file"] {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    transition: border 0.3s ease;
+}
+
+input[type="file"]:hover {
+    border: 1px solid #4CAF50;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#prediction-result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.success {
+    color: #28a745; /* Green for success */
+}
+
+.failure {
+    color: #dc3545; /* Red for failure */
+}
+
+#image-preview-container {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#image-preview {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+#loading-spinner {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    button, input[type="file"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
