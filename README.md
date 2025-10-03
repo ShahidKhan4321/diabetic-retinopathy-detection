@@ -66,7 +66,7 @@ python app.py
 Then open the Index.html,if you’re using the API.
 
 
-🌐 [Live Demo:] (https://diabetic-retinopathy-detection-cnn.streamlit.app/)
+🌐 [Live Demo:](https://diabetic-retinopathy-detection-cnn.streamlit.app/)
 🚀 Live Web App on Streamlit Cloud
 
 
